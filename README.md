@@ -3,11 +3,17 @@ This is a sample app I built to familiarize myself with JWT authentication and A
 
 # Dependencies
 nodemon - to restart server whenever there's a change
+
 npm
 
 # To run
 `npm install`
+
 `nodemon server.js`
+
 Go to localhost:3000
+
+## Credit
+[Egghead: Kent. C. Dodds](https://egghead.io/lessons/angularjs-basic-server-setup-for-jwt-authentication)
 
 

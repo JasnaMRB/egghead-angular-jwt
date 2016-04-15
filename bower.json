@@ -1,0 +1,21 @@
+{
+  "name": "egghead-angular-jwt",
+  "description": "Sample app to learn JWT authentication with Angular",
+  "main": "index.js",
+  "authors": [
+    "jasnamrb"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/JasnaMRB/egghead-angular-jwt",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.4"
+  }
+}

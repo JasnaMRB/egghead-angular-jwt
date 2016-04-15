@@ -18,8 +18,12 @@
   "private": true,
   "homepage": "https://github.com/JasnaMRB/egghead-angular-jwt#readme",
   "devDependencies": {
+    "cors": "^2.7.1",
     "express": "^4.13.4",
     "faker": "^3.1.0",
     "nodemon": "^1.9.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0"
   }
 }

@@ -1,0 +1,25 @@
+{
+  "name": "egghead-angular-jwt",
+  "version": "1.0.0",
+  "description": "Sample app to learn JWT authentication with Angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasnaMRB/egghead-angular-jwt.git"
+  },
+  "author": "jasnamrb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasnaMRB/egghead-angular-jwt/issues"
+  },
+  "private": true,
+  "homepage": "https://github.com/JasnaMRB/egghead-angular-jwt#readme",
+  "devDependencies": {
+    "express": "^4.13.4",
+    "faker": "^3.1.0",
+    "nodemon": "^1.9.1"
+  }
+}

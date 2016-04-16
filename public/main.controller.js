@@ -18,6 +18,10 @@
             });
         }
 
+        UserFactory.getUser().then(function success(response) {
+            vm.user = response.data;
+        });
+
         function login(username, password) {
             UserFactory.login(username, password).then(function success(response) {
                 vm.user = response.data.user;

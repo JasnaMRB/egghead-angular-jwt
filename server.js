@@ -3,6 +3,8 @@ var faker = require('faker');
 var cors = require('cors');
 var app = express();
 var bodyParser = require('body-parser');
+var jwt = require('jsonwebtoken');
+var jwtSecret = 'JD6xicO3c7U!V9248';
 var user = {
     username: "jasnamrb",
     password: "boo"
@@ -10,6 +12,7 @@ var user = {
 
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.static(__dirname + '/public'));
 
 app.get('/random-user', function (req, res) {
     var user = faker.helpers.userCard();
@@ -18,7 +21,12 @@ app.get('/random-user', function (req, res) {
 });
 
 app.post('/login', authenticate, function(req, res) {
-    res.send(user);
+    var token = jwt.sign({
+        username: user.username
+    }, jwtSecret);
+    res.send({
+        token: token, user: user
+    });
 });
 
 app.listen(3000, function () {
@@ -35,7 +43,10 @@ function authenticate(req, res, next) {
     }
     if (body.username !== user.username || body.password !== user.password) {
         res.status(401).end("Username or password incorrect.");
+    } else {
+        res.status(200)
     }
+
     next();
 
 }

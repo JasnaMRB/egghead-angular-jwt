@@ -6,12 +6,22 @@ nodemon - to restart server whenever there's a change
 
 npm
 
+http-server
+
 # To run
-`npm install`
+`npm install` - for first time only
+
+## Server-side app
 
 `nodemon server.js`
 
-Go to localhost:3000
+Go to localhost:3000/random-user
+
+## Client-side app
+
+`http-server`
+
+Go to localhost:8080
 
 ## Credit
 [Egghead: Kent. C. Dodds](https://egghead.io/lessons/angularjs-basic-server-setup-for-jwt-authentication)

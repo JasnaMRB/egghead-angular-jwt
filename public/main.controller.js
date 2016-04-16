@@ -7,10 +7,10 @@
 
     function MainController(RandomUserFactory, UserFactory) {
         var vm = this;
-        vm.getRandomUser = getRandomUser();
+        vm.getRandomUser = getRandomUser;
+        // vm.getRandomUser = getRandomUser() makes the call immediately when you load the page and then never again!
         vm.login = login;
         vm.logout = logout;
-        vm.randomUser = '';
 
         function getRandomUser() {
             RandomUserFactory.getUser().then(function success(response) {
@@ -21,7 +21,6 @@
         function login(username, password) {
             UserFactory.login(username, password).then(function success(response) {
                 vm.user = response.data.user;
-                alert(response.data.token);
             }, handleError);
 
         }

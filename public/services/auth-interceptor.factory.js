@@ -1,5 +1,5 @@
 (function() {
-    'use strict';
+    /*'use strict';
     angular.module('jwtApp')
         .factory('AuthInterceptor', AuthInterceptor);
 
@@ -18,6 +18,6 @@
             }
             return config;
         }
-    }
+    }*/
 
 })();
